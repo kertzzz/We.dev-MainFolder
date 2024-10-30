@@ -416,6 +416,7 @@ h4 {
     position: relative;
     float: right;
     width: 50px;
+    cursor: pointer;
     border-radius: 3px transparent;
 }
 
