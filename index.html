@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeDev</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/7b1ce9f98a.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
@@ -27,10 +29,10 @@
         </nav>
         <nav class="dropdown" id="dropdown-menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" style="--i:1;" class="tab-active">Home</a></li>
+                <li><a href="#" style="--i:2;">About</a></li>
+                <li><a href="#" style="--i:3;">Portfolio</a></li>
+                <li><a href="#" style="--i:4;">Contact Us</a></li>
             </ul>
         </nav>
         <div class="menu-btn" id="mobile-menu">
@@ -42,7 +44,9 @@
         <!--Home page-->
         <section class="Home-page" id="Home-page">
             <div class="home-div">
-                <h2>Welcome to We.Dev</h2>
+                <div class="Font-div">
+                    <h2>Welcome to We.Dev</h2>
+                </div>
                 <h3>This Website was built by first year students of<br> Bachelor of Science in Information Technology
                     from<br> Quezon City University. 2024-2025</h3>
             </div>
@@ -164,7 +168,7 @@
                     <div class="Java-container"></div>
                     <div class="AndroidApp-container"></div>
                 </div>
-                <a href="#Contact-page" class="ContactBTN">Contact Us</a>      
+                <a href="#Contact-page" class="ContactBTN">Contact Us</a>
             </div>
         </section>
 
@@ -176,22 +180,23 @@
 
                     </div>
                     <div class="right-container">
-                        <form action="#">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="Form-box">
                             <h3>Contact Us</h3>
+                            <input type="hidden" name="access_key" value="ea3e7132-bba4-4a99-8bd9-8ea3bbce3355">
                             <div class="input-box">
-                                <input type="text" id="text-name" required>
+                                <input type="text" name="name" id="text-name" required>
                                 <span>Full Name</span>
                             </div>
                             <div class="input-box">
-                                <input type="text" id="text-email" required>
+                                <input type="text" name="email" id="text-email" required>
                                 <span>Email Address</span>
                             </div>
                             <div class="input-box">
-                                <textarea id="text-area" required></textarea>
+                                <textarea id="text-area" name="message" required></textarea>
                                 <span>Type your Message...</span>
                             </div>
                             <div class="input-box">
-                                <input type="submit" id="submitBTN" value="Send">
+                                <input type="submit" id="submitBTN" value="Send" onclick="Submit()">
                             </div>
                         </form>
                     </div>

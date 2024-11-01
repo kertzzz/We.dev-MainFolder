@@ -1,122 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Desktop Screen-size*/
-@media (max-width: 1629px) {
-    .home-div h2 {
-        color: black;
-    }
-}
-
-/*Laptop Screen-size*/
-@media (max-width: 1344px) {
-
-    .card-list,
-    .card-item {
-        width: 500px;
-        height: 70vh;
-        color: #222;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .card-image {
-        position: relative;
-        border-radius: 50%;
-        border: 2px solid #444444;
-        margin-bottom: 20px;
-        margin-top: -20px;
-        height: auto;
-        width: 200px;
-    }
-
-    .card-list,
-    h4 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-align: center;
-    }
-
-    .card-list {
-        display: flex;
-        justify-content: space-between;
-        grid-template-columns: auto auto auto;
-        grid-gap: 155px;
-        flex: none;
-
-    }
-
-    .card-item {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        background: #fff;
-        width: 10px;
-        padding: 55px;
-        border-radius: 8px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .card-list .card-item .Role {
-        font-size: 1.5rem;
-        color: #bb9107;
-        font-weight: 500;
-        margin: 14px 0 40px;
-        text-align: center;
-    }
-
-    .card-list .card-item .more-details {
-        font-size: 1.25rem;
-        padding: 10px 35px;
-        color: #030728;
-        font-weight: 500;
-        border-radius: 6px;
-        cursor: pointer;
-        border: 1px solid black;
-        transition: .2s ease;
-    }
-}
-
-/*Tablet Screen-size*/
-@media (max-width: 768px) {
-
-    .navbar-links.active,
-    .navbar-links {
-        display: none;
-    }
-
-    .dropdown {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: #222;
-        top: 69px;
-        right: 15px;
-        width: 25vh;
-        z-index: 1;
-    }
-
-    .dropdown ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    .dropdown ul li {
-        margin: 15px 1px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .dropdown.active {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: flex;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -145,12 +28,15 @@ header {
     backdrop-filter: blur(5px);
     padding: 1rem 3.5rem;
     z-index: 1;
+    overflow: hidden;
 }
 
 .navbar .logo {
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
+    margin-left: 30px;
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar-links {
@@ -165,14 +51,20 @@ header {
 }
 
 .navbar-links a {
+    display: inline-block;
     text-decoration: none;
     color: #fff;
+    font-weight: 500;
     font-size: 1.2rem;
     padding-right: 70px;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
+    opacity: 0;
+    animation: slideTop .8s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar a .tab-active {
     color: #03DAC5;
 }
 
@@ -218,11 +110,17 @@ a {
     width: 70%;
 }
 
-.home-div h2 {
+.Font-div h2 {
+    width: 46.5%;
     font-size: 65px;
     padding-bottom: 10px;
     color: #03DAC6;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid white;
+    animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite, slideLeft .8s ease forwards;
 }
+
 
 .home-div h3 {
     padding-left: 20px;
@@ -231,6 +129,8 @@ a {
     text-indent: 55px;
     color: rgb(255, 255, 255);
     font-family: monospace;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .2s;
 }
 
 /*About Page*/
@@ -275,6 +175,7 @@ a {
     color: #222;
     padding-left: 100px;
     padding-right: 100px;
+    animation: swingTop .8s linear forwards;
 }
 
 .card-image {
@@ -475,7 +376,15 @@ h4 {
     position: relative;
     top: 20px;
     left: 92vh;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: .2s ease;
 }
+
+.ContactBTN:hover {
+    background-color: #40817b;
+    color: #ffffff;
+}
+
 /*Contact Page*/
 .Contact-page {
     min-height: 100vh;
@@ -495,6 +404,7 @@ h4 {
     top: 11vh;
     display: flex;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    animation: swingTop .8s linear forwards;
 }
 
 .left-container {

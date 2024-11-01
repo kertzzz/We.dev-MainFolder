@@ -12,11 +12,11 @@ let scrollContainer = document.querySelector(".card-slider");
 let backBTN = document.getElementById('backBTN');
 let nextBTN = document.getElementById('nextBTN');
 
-nextBTN.addEventListener("click", ()=> {
+nextBTN.addEventListener("click", () => {
     scrollContainer.scrollLeft += 900;
 });
 
-backBTN.addEventListener("click", ()=> {
+backBTN.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 900;
 });
 
@@ -26,11 +26,11 @@ const floatbox = document.getElementById('float-box');
 const DetailsBTN = document.getElementById('Details');
 const closeBTN = document.getElementById('close-btn');
 
-DetailsBTN.addEventListener('click', ()=> {
+DetailsBTN.addEventListener('click', () => {
     floatbox.classList.toggle('active');
 });
 
-closeBTN.addEventListener('click',  ()=> {
+closeBTN.addEventListener('click', () => {
     floatbox.classList.remove('active');
 });
 
@@ -49,3 +49,7 @@ closeBTN.addEventListener('click',  ()=> {
         prevEl: '.swiper-button-prev',
     },
 });*/
+
+/*const Submit = () => {
+    document.getElementById("Form-box").reset();
+};*/
