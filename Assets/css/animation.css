@@ -91,3 +91,14 @@
         opacity: 1;
     }
 }
+
+@keyframes active {
+    0% {
+        scale: 0.3;
+        opacity: 0.5;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}

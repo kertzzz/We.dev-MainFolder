@@ -5,42 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeDev</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/animation.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script src="https://kit.fontawesome.com/7b1ce9f98a.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b1ce9f98a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="navbar">
         <div class="logo">
-            <h1>We.Dev</h1>
+            <img src="Assets/img/logo.png" alt="Logo">
         </div>
         <nav class="navbar-links" id="navbar-links">
             <ul>
-                <li><a href="#Home-page">Home</a></li>
-                <li><a href="#About-page">About</a></li>
-                <li><a href="#Portfolio-page">Portfolio</a></li>
-                <li><a href="#Contact-page">Contact Us</a></li>
-            </ul>
-        </nav>
-        <nav class="dropdown" id="dropdown-menu">
-            <ul>
-                <li><a href="#" style="--i:1;" class="tab-active">Home</a></li>
-                <li><a href="#" style="--i:2;">About</a></li>
-                <li><a href="#" style="--i:3;">Portfolio</a></li>
-                <li><a href="#" style="--i:4;">Contact Us</a></li>
+                <li><a href="#Home-page" style="--i:1;">Home</a></li>
+                <li><a href="#About-page" style="--i:2;">About</a></li>
+                <li><a href="#Portfolio-page" style="--i:3;">Portfolio</a></li>
+                <li><a href="#Contact-page" style="--i:4;">Contact Us</a></li>
             </ul>
         </nav>
         <div class="menu-btn" id="mobile-menu">
             <i class="fa-solid fa-bars"></i>
         </div>
+        <nav class="dropdown" id="dropdown-menu">
+            <ul>
+                <li><a href="#Home-page" class="tab-active">Home</a></li>
+                <li><a href="#About-page">About</a></li>
+                <li><a href="#Portfolio-page">Portfolio</a></li>
+                <li><a href="#Contact-page">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="main-container">
+
         <!--Home page-->
         <section class="Home-page" id="Home-page">
             <div class="home-div">
@@ -56,10 +57,54 @@
         <section class="About-page" id="About-page">
             <div class="About-div">
                 <h2>Meet Our Team</h2>
+                <div class="main-container swiper">
+                    <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                            <div class="card-item swiper-slide">
+                                <img src="Assets/img/profile.webp" alt="Card Image" class="card-image">
+                                <h4 class="name">John Kert Ouano</h4>
+                                <p class="role">Head Programmer</p>
+                                <button class="more-details" id="Details">More Details</button>
+                            </div>
+
+                            <div class="card-item swiper-slide">
+                                <img src="Assets/img/profile.webp" alt="Card Image" class="card-image">
+                                <h4 class="name">John Kert Ouano</h4>
+                                <p class="role">Head Programmer</p>
+                                <button class="more-details" id="Details">More Details</button>
+                            </div>
+
+                            <div class="card-item swiper-slide">
+                                <img src="Assets/img/profile.webp" alt="Card Image" class="card-image">
+                                <h4 class="name">John Kert Ouano</h4>
+                                <p class="role">Head Programmer</p>
+                                <button class="more-details" id="Details">More Details</button>
+                            </div>
+
+                            <div class="card-item swiper-slide">
+                                <img src="Assets/img/profile.webp" alt="Card Image" class="card-image">
+                                <h4 class="name">John Kert Ouano</h4>
+                                <p class="role">Head Programmer</p>
+                                <button class="more-details" id="Details">More Details</button>
+                            </div>
+
+                            <div class="card-item swiper-slide">
+                                <img src="Assets/img/profile.webp" alt="Card Image" class="card-image">
+                                <h4 class="name">John Kert Ouano</h4>
+                                <p class="role">Head Programmer</p>
+                                <button class="more-details" id="Details">More Details</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="slide-button swiper-button-prev"></div>
+                        <div class="slide-button swiper-button-next"></div>
+                    </div>
+                </div>
                 <div class="floatbox" id="float-box">
                     <button class="close-btn" id="close-btn">X</button>
                     <div class="profile-img">
-                        <img src="img/profile.webp" alt="Image">
+                        <img src="Assets/img/profile.webp" alt="Image">
                     </div>
                     <p class="profile-name">John Kert Ouano</p>
                     <p class="profile-role">Head Programmer</p>
@@ -70,91 +115,6 @@
                         <li><b>Place of Birth: </b> Quezon City</li>
                         <li><b>Gender: </b> Male</li>
                     </ul>
-                </div>
-
-                <div class="card-slider">
-                    <div class="card-list ">
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Head Programmer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                        <div class="card-item swiper-slide">
-                            <img src="img/profile.webp" alt="Card Image" class="card-image">
-                            <h4 class="name">John Kert Ouano</h4>
-                            <p class="Role">Web Developer</p>
-                            <button class="more-details" id="Details">More Details</button>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev" id="backBTN"></div>
-                    <div class="swiper-button-next" id="nextBTN"></div>
                 </div>
             </div>
         </section>
@@ -177,7 +137,12 @@
             <div class="Contact-div">
                 <div class="contact-container">
                     <div class="left-container">
-
+                        <div class="text-details">
+                            <p><b>Address : </b>Quezon City University - Batasan, Batasan Rd, Quezon City, Metro Manila.</p>
+                            <p><b>Contact Number : </b>+63 | 9365919492</p>
+                            <p><b>Facebook Page : </b>We.Dev Services</p>
+                            <p><b>Email : </b>We.DevServices@wedev.edu.ph</p>
+                        </div>
                     </div>
                     <div class="right-container">
                         <form action="https://api.web3forms.com/submit" method="POST" id="Form-box">

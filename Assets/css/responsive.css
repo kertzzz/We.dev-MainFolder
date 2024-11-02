@@ -1,0 +1,129 @@
+/*My Main Desktop Screen-size*/
+@media (max-width: 1920px) {}
+
+/*Laptop Screen-size*/
+@media (max-width: 1344px) {
+    .home-div h2 {
+        font-size: 45px;
+    }
+
+    .home-div h3 {
+        font-size: 23px;
+    }
+}
+
+/*Tablet Screen-Size*/
+@media (max-width: 890px) {
+    .home-div h2 {
+        font-size: 30px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .home-div h3 {
+        font-size: 18px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .navbar-links.active,
+    .navbar-links {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top: 69px;
+        right: 15px;
+        width: 25vh;
+        z-index: 1;
+    }
+
+    .dropdown ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown ul li {
+        margin: 15px 1px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .slider-wrapper .slide-button {
+        margin-top: -50px;
+    }
+}
+
+
+/*Mobile Screen-size*/
+@media (max-width: 768px) {
+    .home-div h2 {
+        font-size: 25px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .home-div h3 {
+        font-size: 17px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .navbar-links.active,
+    .navbar-links {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top: 69px;
+        right: 15px;
+        width: 25vh;
+        z-index: 100;
+    }
+
+    .dropdown ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown ul li {
+        margin: 15px 1px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .slide-button {
+        display: none;
+    }
+}

@@ -1,0 +1,119 @@
+<div class="floatbox" id="float-box">
+                    <button class="close-btn" id="close-btn">X</button>
+                    <div class="profile-img">
+                        <img src="Assets/img/profile.webp" alt="Image">
+                    </div>
+                    <p class="profile-name">John Kert Ouano</p>
+                    <p class="profile-role">Head Programmer</p>
+                    <p class="profile-motto">Forgiveness is a gift to myself. By letting go my <br>past mistakes.</p>
+                    <ul>
+                        <li><b>Age: </b> 18 years old</li>
+                        <li><b>Birthdate: </b> December 25, 2005</li>
+                        <li><b>Place of Birth: </b> Quezon City</li>
+                        <li><b>Gender: </b> Male</li>
+                    </ul>
+                </div>
+
+const floatbox = document.getElementById('float-box');
+const DetailsBTN = document.getElementById('Details');
+const closeBTN = document.getElementById('close-btn');
+
+DetailsBTN.addEventListener('click', () => {
+    floatbox.classList.toggle('active');
+});
+
+closeBTN.addEventListener('click', () => {
+    floatbox.classList.remove('active');
+});
+
+
+
+
+
+
+                .card-container {
+    overflow-x: scroll;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list,
+.card-item {
+    width: 600px;
+    height: 65vh;
+    color: #222;
+    padding-left: 100px;
+    padding-right: 100px;
+    animation: swingTop .8s linear forwards;
+}
+
+.card-image {
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #444444;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 250px;
+}
+
+.card-list,
+h4 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 205px;
+    flex: none;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #fff;
+    padding: 55px;
+    border-radius: 8px;
+}
+
+.card-list .card-item .Role {
+    font-size: 1.5rem;
+    color: #bb9107;
+    font-weight: 500;
+    margin: 14px 0 40px;
+    text-align: center;
+}
+
+.card-list .card-item .more-details {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: .2s ease;
+}
+
+.card-list .card-item .more-details:hover {
+    background: #686868;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: .2s ease;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    color: #00ffe5;
+}
