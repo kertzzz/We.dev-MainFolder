@@ -2,18 +2,27 @@
 @media (max-width: 1920px) {}
 
 /*Laptop Screen-size*/
-@media (max-width: 1344px) {
+@media (max-width: 1423px) {
     .home-div h2 {
         font-size: 45px;
+        width: 44%;
     }
 
     .home-div h3 {
         font-size: 23px;
     }
+
+    .About-page h2 {
+        padding-bottom: 30px;
+    }
+
+    .slider-wrapper .slide-button  {
+        margin: -50px 70px 35px;
+    }
 }
 
 /*Tablet Screen-Size*/
-@media (max-width: 890px) {
+@media (max-width: 990px) {
     .home-div h2 {
         font-size: 30px;
         position: relative;
@@ -75,10 +84,11 @@
         font-size: 25px;
         position: relative;
         left: -8vh;
+        width: 46%;
     }
 
     .home-div h3 {
-        font-size: 17px;
+        font-size: 16.5px;
         position: relative;
         left: -8vh;
     }

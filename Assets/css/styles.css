@@ -111,7 +111,7 @@ a {
 }
 
 .Font-div h2 {
-    width: 46.5%;
+    width: 47%;
     font-size: 65px;
     padding-bottom: 10px;
     color: #03DAC6;
@@ -227,8 +227,7 @@ a {
 
 .slider-wrapper .slide-button {
     color: #15a395;
-
-    margin: 0 70px 55px;
+    margin: -30px 70px 35px;
     transition: .2s ease;
 }
 
