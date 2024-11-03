@@ -283,8 +283,8 @@ a {
     font-weight: 500;
     position: relative;
     float: right;
-    bottom: 33vh;
-    right: 5vh;
+    bottom: 34vh;
+    right: 8vh;
     color: #bb9107;
 }
 
@@ -292,8 +292,8 @@ a {
     font-size: 28px;
     position: relative;
     float: right;
-    bottom: 30vh;
-    right: -25vh;
+    bottom: 29vh;
+    right: -40vh;
 }
 
 .floatbox ul {
@@ -313,6 +313,13 @@ a {
     width: 50px;
     cursor: pointer;
     border-radius: 3px transparent;
+    background: #dfdfdf;
+    transition: .2s ease;
+}
+
+.close-btn:hover {
+    color: #fff;
+    background-color: #03dac57a;
 }
 
 
