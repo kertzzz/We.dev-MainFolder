@@ -164,6 +164,7 @@ a {
 .slider-wrapper {
     overflow: hidden;
     max-width: 100%;
+    height: 50vh;
     margin: 0 160px 55px;
 }
 
@@ -247,7 +248,7 @@ a {
     border-radius: 20px;
     left: 38vh;
     overflow: hidden;
-    animation: active .2s linear forwards;
+    animation: active .2s ease-in-out forwards;
 }
 
 .floatbox img {
@@ -312,14 +313,15 @@ a {
     float: right;
     width: 50px;
     cursor: pointer;
-    border-radius: 3px transparent;
-    background: #dfdfdf;
+    border: none;
+    background: transparent;
     transition: .2s ease;
+    color: #fff;
 }
 
 .close-btn:hover {
     color: #fff;
-    background-color: #03dac57a;
+    background-color: #03dac549;
 }
 
 
@@ -357,13 +359,14 @@ a {
 .AndroidApp-container {
     background-color: #15a395;
     margin-top: 20px;
-    width: 40vh;
+    width: 50vh;
     height: 60vh;
     position: relative;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .ContactBTN {
+    display: block;
     font-size: 20px;
     background: #fff;
     border: none;
@@ -371,9 +374,8 @@ a {
     padding: 15px;
     color: #1b2150;
     font-weight: 600;
-    position: relative;
-    top: 20px;
-    left: 92vh;
+    width: 14.5vh;
+    margin: auto;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     transition: .2s ease;
 }

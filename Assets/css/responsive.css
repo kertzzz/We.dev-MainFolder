@@ -15,9 +15,73 @@
     .About-page h2 {
         padding-bottom: 30px;
     }
-
+    
     .slider-wrapper .slide-button  {
         margin: -50px 70px 35px;
+    }
+
+    .Portfolio-page h2 {
+        font-size: 50px;
+    }
+
+    .language-container .WebDev-container,
+    .Java-container,
+    .AndroidApp-container {
+        margin-top: 10px;
+        width: 40vh;
+    }
+
+    .ContactBTN {
+        width: 15.5vh;
+    }
+
+    .right-container h3 {
+        font-size: 35px;
+        padding: 20px;
+    }
+
+    .right-container .input-box {
+        margin-top: 45px;
+    }
+
+    .text-details {
+        margin: 60px 0;
+        padding: 10px;
+    }
+
+    .text-details p {
+        font-size: 17px;
+        padding: 30px;
+    }
+
+    .floatbox {
+        left: 50vh;
+    }
+
+    .floatbox .profile-name {
+        right: 25vh;
+        font-size: 38px;
+    }
+
+    .floatbox .profile-role {
+        font-size: 30px;
+        right: -8vh;
+    }
+
+    .floatbox .profile-motto {
+        font-size: 20px;
+        right: -30vh;
+    }
+
+    .floatbox ul {
+        font-size: 20px;
+        right: 33vh;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: auto;
+        font-size: 30px;
     }
 }
 
@@ -75,6 +139,46 @@
     .slider-wrapper .slide-button {
         margin-top: -50px;
     }
+
+    .card-list .card-item .name {
+        font-size: 24px;
+    }
+
+    .card-list .card-item .role {
+        font-size: 20px;
+    }
+
+    .floatbox {
+        left: 18vh;
+    }
+
+    .floatbox .profile-name {
+        right: 25vh;
+        font-size: 38px;
+    }
+
+    .floatbox .profile-role {
+        font-size: 30px;
+        right: -8vh;
+    }
+
+    .floatbox .profile-motto {
+        font-size: 20px;
+        right: -35vh;
+    }
+
+    .floatbox ul {
+        font-size: 20px;
+        right: 29vh;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: auto;
+        font-size: 30px;
+    }
+    
+
 }
 
 
