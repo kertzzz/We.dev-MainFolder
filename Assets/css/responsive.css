@@ -20,6 +20,10 @@
         margin: -50px 70px 35px;
     }
 
+    .slider-wrapper {
+        height: auto;
+    }
+
     .Portfolio-page h2 {
         font-size: 50px;
     }
@@ -28,11 +32,11 @@
     .Java-container,
     .AndroidApp-container {
         margin-top: 10px;
-        width: 40vh;
+        width: 50vh;
     }
 
     .ContactBTN {
-        width: 15.5vh;
+        width: 21.5vh;
     }
 
     .right-container h3 {
