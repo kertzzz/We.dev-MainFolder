@@ -24,6 +24,27 @@
         height: auto;
     }
 
+    .floatbox {
+        position: relative;
+        height: 58vh;
+        width: 95vh;
+        right: 80vh;
+        top: -40vh;
+        z-index: 100;
+    }
+
+    .floatbox .profile-img {
+        width: 28%;
+        top: 5vh;
+        left: 35px;
+    }
+
+    .floatbox .profile-name {
+        position: relative;
+        right: 10vh;
+    }
+
+
     .Portfolio-page h2 {
         font-size: 50px;
     }
@@ -63,23 +84,23 @@
     }
 
     .floatbox .profile-name {
-        right: 25vh;
+        right: 20vh;
         font-size: 38px;
     }
 
     .floatbox .profile-role {
         font-size: 30px;
-        right: -8vh;
+        right: -10vh;
     }
 
     .floatbox .profile-motto {
         font-size: 20px;
-        right: -30vh;
+        right: -38vh;
     }
 
     .floatbox ul {
         font-size: 20px;
-        right: 33vh;
+        right: 20vh;
     }
 
     .close-btn {

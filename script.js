@@ -36,18 +36,66 @@ const swiper = new Swiper('.slider-wrapper', {
     }
 });
 
-const floatbox = document.getElementById('float-box');
-const DetailsBTN = document.getElementById('Details');
-const closeBTN = document.getElementById('close-btn');
+document.addEventListener("DOMContentLoaded", function () {
+    const detailButtons = document.querySelectorAll('.more-details');
+    const closeButtons = document.querySelectorAll('.close-btn');
 
-DetailsBTN.addEventListener('click', () => {
-    floatbox.classList.toggle('active');
+    detailButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const profileId = this.getAttribute('data-profile');
+            const profileBox = document.getElementById(`profile-${profileId}`);
+            if (profileBox) {
+                profileBox.style.display = 'block';
+            }
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            this.closest('.floatbox').style.display = 'none';
+        });
+    });
 });
 
-closeBTN.addEventListener('click', () => {
-    floatbox.classList.remove('active');
-});
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
 
+    // Send the form data via AJAX to Web3Forms API
+    let formData = new FormData(event.target);
 
+    fetch(event.target.action, {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => {
+            if (response.ok) {
+                // If successful, show confirmation and reset the form for the next message
+                showConfirmationMessage(); // Show confirmation message
+                resetForm(); // Reset form after submission
+            } else {
+                // Handle any errors if the submission failed
+                alert('There was an issue submitting your form. Please try again.');
+            }
+        })
+        .catch(error => {
+            // If there's an error with the fetch request
+            alert('Error: ' + error.message);
+        });
+}
 
+// Show the confirmation message
+function showConfirmationMessage() {
+    document.getElementById("confirmation-message").style.display = "block";
 
+    // After a brief delay, reset the form and show it again
+    setTimeout(() => {
+        resetForm();
+        document.getElementById("confirmation-message").style.display = "none";
+    }, 3000); // Wait for 3 seconds before resetting
+}
+
+// Reset the form for the next submission
+function resetForm() {
+    // Reset the form fields
+    document.getElementById("Form-box").reset();
+}

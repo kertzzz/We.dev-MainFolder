@@ -121,7 +121,6 @@ a {
     animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite, slideLeft .8s ease forwards;
 }
 
-
 .home-div h3 {
     padding-left: 20px;
     font-size: 27px;
@@ -349,8 +348,8 @@ a {
     display: flex;
     width: 100%;
     height: 65vh;
-    justify-content: space-between;
-    padding-left: 40px;
+    justify-content: center;
+    padding-left: 95px;
     padding-right: 40px;
 }
 
@@ -359,10 +358,53 @@ a {
 .AndroidApp-container {
     background-color: #15a395;
     margin-top: 20px;
+    margin-right: 50px;
     width: 50vh;
     height: 60vh;
     position: relative;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .8);
+    border-radius: 20px;
+}
+
+.language-container i {
+    font-size: 90px;
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.language-container h5 {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.language-container .See_more {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    right: 5px;
+    font-size: 20px;
+    padding: 10px 75px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: .2s ease;
+}
+
+.language-container .See_more:hover {
+    background-color: #2e2e2e;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.language-container .AndroidApp-container {
+
 }
 
 .ContactBTN {
