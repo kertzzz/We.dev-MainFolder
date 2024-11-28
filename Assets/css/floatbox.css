@@ -1,0 +1,363 @@
+/*Faith*/
+#profile-faith {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-faith img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-faith .profile-name {
+    bottom: 50vh;
+}
+
+#profile-faith .profile-role {
+    bottom: 44vh;
+}
+
+#profile-faith .profile-motto {
+    bottom: 40vh;
+}
+
+/*Kert*/
+#profile-kert {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-kert img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-kert .profile-name {
+    bottom: 50vh;
+}
+
+#profile-kert .profile-role {
+    bottom: 44vh;
+    left: 18vh;
+}
+
+#profile-kert .profile-motto {
+    bottom: 40vh;
+    right: -33vh;
+}
+
+/*nashley*/
+#profile-nashley {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-nashley img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-nashley .profile-name {
+    bottom: 50vh;
+}
+
+#profile-nashley .profile-role {
+    bottom: 44vh;
+    left: 25vh;
+}
+
+#profile-nashley .profile-motto {
+    bottom: 40vh;
+    right: -40vh;
+}
+
+/*Kerby*/
+#profile-kerby {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-kerby img {
+    height: 60vh;
+    width: 47vh;
+}
+
+#profile-kerby .profile-name {
+    bottom: 50vh;
+}
+
+#profile-kerby .profile-role {
+    bottom: 44vh;
+    left: 20vh;
+}
+
+#profile-kerby .profile-motto {
+    bottom: 40vh;
+    right: -50vh;
+}
+
+/*Mikel*/
+#profile-mikel {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-mikel img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-mikel .profile-name {
+    bottom: 50vh;
+    right: 30vh;
+}
+
+#profile-mikel .profile-role {
+    bottom: 44vh;
+    right: -3vh;
+}
+
+#profile-mikel .profile-motto {
+    bottom: 40vh;
+    padding-top: 3vh;
+}
+
+/*Ellah*/
+#profile-ellah {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-ellah img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-ellah .profile-name {
+    bottom: 50vh;
+    right: 30vh;
+}
+
+#profile-ellah .profile-role {
+    bottom: 44vh;
+}
+
+#profile-ellah .profile-motto {
+    bottom: 40vh;
+    left: 42vh;
+    padding-top: 2vh;
+}
+
+/*Danielle*/
+#profile-bacani {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-bacani img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-bacani .profile-name {
+    bottom: 50vh;
+    right: 30vh;
+}
+
+#profile-bacani .profile-role {
+    bottom: 44vh;
+    right: 8vh;
+}
+
+#profile-bacani .profile-motto {
+    bottom: 40vh;
+    left: 25vh;
+    padding-top: 3vh;
+}
+
+/*precious*/
+#profile-precious {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-precious img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-precious .profile-name {
+    bottom: 50vh;
+    right: 6vh;
+}
+
+#profile-precious .profile-role {
+    bottom: 44vh;
+    right: -16vh;
+}
+
+#profile-precious .profile-motto {
+    bottom: 40vh;
+    right: -53vh;
+}
+
+/*Gadiel*/
+#profile-gadiel {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-gadiel img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-gadiel .profile-name {
+    bottom: 50vh;
+    right: 30vh;
+}
+
+#profile-gadiel .profile-role {
+    bottom: 44vh;
+    right: 3vh;
+}
+
+#profile-gadiel .profile-motto {
+    bottom: 40vh;
+    left: 48vh;
+    padding-top: 3vh;
+}
+
+/*Marilyn*/
+#profile-mendez {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-mendez img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-mendez .profile-name {
+    bottom: 50vh;
+    right: 30vh;
+}
+
+#profile-mendez .profile-role {
+    bottom: 44vh;
+    right: 3vh;
+}
+
+#profile-mendez .profile-motto {
+    bottom: 40vh;
+    left: 53vh;
+    padding-top: 3vh;
+}
+
+/*Corcelles*/
+#profile-corcelles {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-corcelles img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-corcelles .profile-name {
+    bottom: 50vh;
+    right: 25vh;
+}
+
+#profile-corcelles .profile-role {
+    bottom: 44vh;
+    right: -4vh;
+}
+
+#profile-corcelles .profile-motto {
+    bottom: 40vh;
+    left: 47vh;
+    padding-top: 3vh;
+}
+
+/*Euro*/
+#profile-gaufo {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-gaufo img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-gaufo .profile-name {
+    bottom: 50vh;
+    right: 38vh;
+}
+
+#profile-gaufo .profile-role {
+    bottom: 44vh;
+    right: 25vh;
+}
+
+#profile-gaufo .profile-motto {
+    bottom: 40vh;
+    left: 25vh;
+    padding-top: 3vh;
+}
+
+/*Diez*/
+#profile-diez {
+    top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+}
+
+#profile-diez img {
+    height: 60vh;
+    width: 50vh;
+}
+
+#profile-diez .profile-name {
+    bottom: 50vh;
+    right: 30vh;
+}
+
+#profile-diez .profile-role {
+    bottom: 44vh;
+    right: 15vh;
+}
+
+#profile-diez .profile-motto {
+    bottom: 40vh;
+    left: 35vh;
+    padding-top: 3vh;
+}

@@ -57,10 +57,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function handleSubmit(event) {
-    event.preventDefault(); // Prevent the default form submission
+document.getElementById("More_Web").onclick = function () {
+    location.href = "WebDevelopment.html";
+};
 
-    // Send the form data via AJAX to Web3Forms API
+document.getElementById("More_Java").onclick = function () {
+    location.href = "JavaDevelopment.html";
+};
+
+document.getElementById("More_MobileApp").onclick = function () {
+    location.href = "MobileAppDevelopment.html";
+};
+
+
+
+function handleSubmit(event) {
+    event.preventDefault(); 
+
     let formData = new FormData(event.target);
 
     fetch(event.target.action, {
@@ -69,33 +82,25 @@ function handleSubmit(event) {
     })
         .then(response => {
             if (response.ok) {
-                // If successful, show confirmation and reset the form for the next message
-                showConfirmationMessage(); // Show confirmation message
-                resetForm(); // Reset form after submission
+                showConfirmationMessage(); 
+                resetForm(); 
             } else {
-                // Handle any errors if the submission failed
                 alert('There was an issue submitting your form. Please try again.');
             }
         })
         .catch(error => {
-            // If there's an error with the fetch request
-            alert('Error: ' + error.message);
+                alert('Error: ' + error.message);
         });
 }
-
-// Show the confirmation message
 function showConfirmationMessage() {
     document.getElementById("confirmation-message").style.display = "block";
 
-    // After a brief delay, reset the form and show it again
     setTimeout(() => {
         resetForm();
         document.getElementById("confirmation-message").style.display = "none";
-    }, 3000); // Wait for 3 seconds before resetting
+    }, 3000);
 }
 
-// Reset the form for the next submission
 function resetForm() {
-    // Reset the form fields
     document.getElementById("Form-box").reset();
 }

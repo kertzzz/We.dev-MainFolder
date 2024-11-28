@@ -16,6 +16,11 @@
         padding-bottom: 30px;
     }
     
+    .card-list .card-item {
+        display: flex;
+        flex-direction: column;
+    }
+
     .slider-wrapper .slide-button  {
         margin: -50px 70px 35px;
     }
@@ -57,7 +62,7 @@
     }
 
     .ContactBTN {
-        width: 21.5vh;
+        width: 21vh;
     }
 
     .right-container h3 {

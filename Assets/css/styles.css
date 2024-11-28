@@ -5,13 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial';
 }
 
 body {
-    background: linear-gradient(#8544e0, #40817b, #5c28d6, #7498af);
+    background-color: #e1e0e0;
     color: #fff;
-    font-family: 'Arial', sans-serif;
     min-height: 100vh;
 }
 
@@ -24,8 +23,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    background-color: #948f8f;
     padding: 1rem 3.5rem;
     z-index: 1000;
     overflow: hidden;
@@ -65,7 +63,7 @@ header {
 
 .navbar-links a:hover,
 .navbar a .tab-active {
-    color: #03DAC5;
+    color: #f65d16;
 }
 
 .dropdown {
@@ -114,10 +112,10 @@ a {
     width: 47%;
     font-size: 65px;
     padding-bottom: 10px;
-    color: #03DAC6;
+    color: #f65d16;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(47, 46, 46);
     animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite, slideLeft .8s ease forwards;
 }
 
@@ -126,8 +124,7 @@ a {
     font-size: 27px;
     line-height: 35px;
     text-indent: 55px;
-    color: rgb(255, 255, 255);
-    font-family: monospace;
+    color: rgb(84, 82, 82);
     animation: slideTop 1s ease forwards;
     animation-delay: .2s;
 }
@@ -141,6 +138,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    background-color: #c9c9c9;
 }
 
 .About-div {
@@ -154,9 +152,10 @@ a {
     display: flex;
     justify-content: center;
     font-size: 65px;
+    font-weight: 600;
     padding-top: 13vh;
     padding-bottom: 80px;
-    color: #03DAC6;
+    color: #595757;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -169,7 +168,7 @@ a {
 
 .card-list .card-item {
     color: #000;
-    background-color: #ffffff52;
+    background-color: #776f6f4b;
     user-select: none;
     padding: 35px;
     display: flex;
@@ -185,48 +184,42 @@ a {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 40px;
-    border: 3px solid #7be4d9;
     padding: 4px;
 }
 
 .card-list .card-item .role {
-    font-size: 22px;
-    color: #daac16;
-    font-weight: bold;
+    font-size: 20px;
+    color: #65635f;
     margin: 14px 0 40px;
 }
 
 .card-list .card-item .name {
-    font-size: 26px;
-    color: #ffffff;
+    font-size: 24px;
+    color: #000000;
     line-height: 5px;
 }
 
 .card-list .card-item .more-details {
     font-size: 22px;
     padding: 10px 35px;
-    color: #030728;
-    border-radius: 6px;
+    color: #000000;
     font-weight: 500;
     cursor: pointer;
-    border: 1px solid black;
     transition: .2s ease;
 }
 
 .card-list .card-item .more-details:hover {
-    background: #686868;
-    border: 1px solid #fff;
     color: #fff;
 }
 
 .slider-wrapper .swiper-pagination-bullet {
-    background-color: #fff;
+    background-color: #3f3d3d;
     height: 13px;
     width: 13px;
 }
 
 .slider-wrapper .slide-button {
-    color: #15a395;
+    color: #333333;
     margin: -30px 70px 35px;
     transition: .2s ease;
 }
@@ -285,7 +278,7 @@ a {
     float: right;
     bottom: 34vh;
     right: 8vh;
-    color: #bb9107;
+    color: #c6c3bb;
 }
 
 .floatbox .profile-motto {
@@ -320,7 +313,7 @@ a {
 
 .close-btn:hover {
     color: #fff;
-    background-color: #03dac549;
+    background-color: #3f414149;
 }
 
 
@@ -332,6 +325,7 @@ a {
     position: relative;
     align-items: center;
     gap: 2rem;
+    background-color: #6f6e6e;
 }
 
 .Portfolio-page h2 {
@@ -339,7 +333,8 @@ a {
     font-size: 65px;
     padding-top: 13vh;
     padding-bottom: 10px;
-    color: #03DAC6;
+    font-weight: 600;
+    color: #fffefe;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
 }
@@ -356,13 +351,13 @@ a {
 .language-container .WebDev-container,
 .Java-container,
 .AndroidApp-container {
-    background-color: #15a395;
+    background-color: #b47070;
     margin-top: 20px;
     margin-right: 50px;
     width: 50vh;
     height: 60vh;
     position: relative;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .8);
+    box-shadow: 0 8px px rgba(0, 0, 0, .2);
     border-radius: 20px;
 }
 
@@ -375,7 +370,8 @@ a {
 }
 
 .language-container h5 {
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -418,12 +414,12 @@ a {
     font-weight: 600;
     width: 14.5vh;
     margin: auto;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transition: .2s ease;
 }
 
 .ContactBTN:hover {
-    background-color: #40817b;
+    background-color: #2e3232;
     color: #ffffff;
 }
 
@@ -438,7 +434,6 @@ a {
 }
 
 .contact-container {
-    background-color: #03DAC5;
     width: 140vh;
     height: 85vh;
     margin: auto;
@@ -450,7 +445,7 @@ a {
 }
 
 .left-container {
-    background-color: #adadad;
+    background-color: #999898;
     width: 45%;
     height: 85vh;
     z-index: 10;
@@ -458,7 +453,7 @@ a {
 
 .text-details {
     font-family: monospace;
-    margin: 80px 5px;
+    margin: 80px px;
     padding: 30px;
 }
 
@@ -530,7 +525,7 @@ a {
 
 .right-container .input-box input[type="submit"] {
     width: 80%;
-    background: #03DAC5;
+    background: #b47070;
     color: #030728;
     border: none;
     cursor: pointer;
@@ -540,6 +535,14 @@ a {
 }
 
 .right-container .input-box input[type="submit"]:hover {
-    background: #20867c;
+    background: #8a5252;
     color: #fff;
+}
+
+.Confirm-message {
+    display: none; 
+    color: rgb(244, 246, 244);
+    font-size: 18px;
+    margin: 10px;
+    padding-top: 10px;
 }
