@@ -23,7 +23,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: #948f8f;
+    background-color: #181920;
     padding: 1rem 3.5rem;
     z-index: 1000;
     overflow: hidden;
@@ -63,7 +63,7 @@ header {
 
 .navbar-links a:hover,
 .navbar a .tab-active {
-    color: #f65d16;
+    color: #C9BC31;
 }
 
 .dropdown {
@@ -112,10 +112,10 @@ a {
     width: 47%;
     font-size: 65px;
     padding-bottom: 10px;
-    color: #f65d16;
+    color: #030728;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 1px solid rgb(47, 46, 46);
+    border-right: 1px solid #65635f;
     animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite, slideLeft .8s ease forwards;
 }
 
@@ -127,6 +127,91 @@ a {
     color: rgb(84, 82, 82);
     animation: slideTop 1s ease forwards;
     animation-delay: .2s;
+}
+
+.navbtn a{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 40vh;
+    left: 20vh;
+    margin-right: 5vh;
+    animation: slideTop 5s ease forwards;
+}
+
+.ContactPage_button {
+    background: rgb(84, 82, 82);
+    padding: 15px 60px 15px 60px;
+    border-radius: 20px;
+}
+
+.AboutPage_button {
+    background: #C9BC31;
+    padding: 15px 60px 15px 60px;
+    border-radius: 20px;
+}  
+
+/*Reviews Details Page*/
+
+.Reviews-page {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #b94e4e;
+}
+
+.Reviews-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.left-rdiv {
+    background-color: #2b2c37;
+    height: 100vh;
+    width: 50%;
+}
+
+.left-rdiv h3 {
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    padding-top: 5vh;
+    padding-bottom: 10px;
+    color: #C9BC31;
+}
+
+.left-rdiv .circle-icon {
+    padding-left: 5vh;
+    height: auto;
+    width: 30vh;
+}
+
+.left-rdiv .fd {
+    font-size: 20px;
+}
+
+.right-rdiv {
+    background-color: #dbd4d4;
+    height: 100vh;
+    width: 50%;
+}
+
+.right-rdiv h3 {
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    padding-top: 5vh;
+    padding-bottom: 10px;
+    color: #000;
 }
 
 /*About Page*/
@@ -152,12 +237,68 @@ a {
     display: flex;
     justify-content: center;
     font-size: 65px;
-    font-weight: 600;
+    font-weight: 500;
     padding-top: 13vh;
     padding-bottom: 80px;
     color: #595757;
     font-family: "Montserrat", sans-serif;
 }
+
+.Profile-Team {
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    justify-content: center;
+    padding-left: 95px;
+    padding-right: 40px;
+}
+
+.Profile-Team .CEO-container,
+.Programmers-container,
+.Designers-container {
+    background-color: #b4adad;
+    margin-top: 1px;
+    margin-right: 70px;
+    width: 50vh;
+    height: 60vh;
+    position: relative;
+    box-shadow: 0 8px px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+}
+
+.Profile-Team h5 {
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.Profile-Team .See_more {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    right: 5px;
+    font-size: 20px;
+    padding: 10px 75px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: .2s ease;
+}
+
+.Profile-Team .See_more:hover {
+    background-color: #2e2e2e;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
 
 .slider-wrapper {
     overflow: hidden;
@@ -185,6 +326,7 @@ a {
     border-radius: 50%;
     margin-bottom: 40px;
     padding: 4px;
+    object-fit: cover;
 }
 
 .card-list .card-item .role {
@@ -317,22 +459,21 @@ a {
 }
 
 
-/*Portfolio Page*/
-.Portfolio-page {
-    min-height: 100vh;
+/*Service Page*/
+.Service-page {
+    min-height: 103vh;
     height: 100%;
     width: 100%;
     position: relative;
     align-items: center;
     gap: 2rem;
-    background-color: #6f6e6e;
+    background-color: #a3a3a3;
 }
 
-.Portfolio-page h2 {
+.Service-page h2 {
     display: flex;
     font-size: 65px;
     padding-top: 13vh;
-    padding-bottom: 10px;
     font-weight: 600;
     color: #fffefe;
     justify-content: center;
@@ -351,9 +492,9 @@ a {
 .language-container .WebDev-container,
 .Java-container,
 .AndroidApp-container {
-    background-color: #b47070;
-    margin-top: 20px;
-    margin-right: 50px;
+    background-color: #3E3B39;
+    margin-top: 1px;
+    margin-right: 70px;
     width: 50vh;
     height: 60vh;
     position: relative;
@@ -361,12 +502,13 @@ a {
     border-radius: 20px;
 }
 
-.language-container i {
-    font-size: 90px;
-    color: #2e2e2e;
-    display: flex;
-    justify-content: center;
-    margin-top: 15vh;
+.language-container img {
+    width: 150px;
+    height: auto;
+    color: #b4adad;
+    margin-top: 5vh;
+    position: relative;
+    left: 88px;
 }
 
 .language-container h5 {
@@ -383,24 +525,16 @@ a {
     margin: auto;
     position: relative;
     top: 10vh;
-    right: 5px;
-    font-size: 20px;
-    padding: 10px 75px;
-    border-radius: 30px;
+    left: 12vh;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
-    border: 1px solid black;
     transition: .2s ease;
+    color: #C9BC31;
 }
 
 .language-container .See_more:hover {
-    background-color: #2e2e2e;
     color: #fff;
-    border: 1px solid #fff;
-}
-
-.language-container .AndroidApp-container {
-
 }
 
 .ContactBTN {
